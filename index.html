@@ -3,133 +3,161 @@
 
 <head>
     <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=GFS Didot' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <style>
-        .center {
-            margin: auto;
-            width: 50%;
-        }
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+
+
+    <header style="margin: auto 0px;">
         <div class="container-fluid">
-            <img class="img-fluid" alt="hero" src="Hero.jpg">
+            <img class="img-fluid" alt="hero" src="Hero.png">
+            <div class="container-fluid" style="top: 240px;
+            left: 240px;position: absolute;">
+                <p class="spring" style="font-family: 'GFS Didot';font-weight: lighter;">SPRING</p>
+                <p style="font-size:36px;font-family:Arial, Helvetica, sans-serif;color: white;">Collection is here!</p>
+            </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" style="top: 700px;position:absolute">
             <div class="row">
-                <div class="col-lg-6" style="text-align: right;top: 300px;">
+                <div class="col-lg-6" style="text-align: right;">
                     <img src="sunglass.jpg" alt="jackets" class="img-fluid">
+                    <div class="container-fluid">
+                        <p class="center sunglasses" style="top: 180px;left: 180px;position: absolute">SUNGLASSES</p>
+                    </div>
                 </div>
                 <div class="col-lg-6" style="text-align: left;">
-                    <img src="leather jacket BW.png" alt=" sunglasses" class="img-fluid">
+                    <img src="leather jacket BW.png" alt="sunglasses" class="img-fluid">
+                    <div class="container-fluid">
+                        <p class="center sunglasses" style="top: 180px;left: 180px;position: absolute">JACKETS</p>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <br><br><br><br><br><br><br><br><br><br>
     <main>
         <br>
         <p style="font-weight: bold
-        ;margin: auto 150px;">Featured Products</p>
-         <hr style="height:2px;border-width:0;color:#CCCCCC;margin: auto 150px;"><br>
+        ;margin: auto 150px;font-family: Arial, Helvetica, sans-serif;font-size: 20px;">Featured Products</p>
+        <hr style="height:2px;border-width:0;color:#CCCCCC;margin: auto 150px;"><br>
         <div class="container-fluid center">
             <div class="row">
-                <div class="col-lg-6" colspan="">
+                <div class="col-2 d-none d-sm-block"></div>
+                <div class="col-lg">
                     <div class="row">
-                        <img src="DawsonTrolley.png" style="height: 500px;width: 500px;" alt="trolley" class="img-fluid">
+                        <img src="DawsonTrolley.png" style="height: 500px;width: 500px;object-fit:contain;"
+                            alt="trolley" class="img-fluid center">
                     </div>
                     <div class="row">
-                        <p style="text-align: center;">Bag $70.00</p>
+                        <p style="object-fit: cover;font-size: 14px;font-family: Arial, Helvetica, sans-serif;">
+                            Bag <b>$70.00</b> </p>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg">
                     <div class="row">
                         <div class="col-lg">
                             <div class="row">
-                                <img src="woolfill-jacket.png" style="height: 230px;width: 230px;" alt="jacket"
-                            class="img-fluid">
+                                <img src="woolfill-jacket.png" style="height: 230px;width: 230px;object-fit: contain;"
+                                    alt="jacket" class="img-fluid">
                             </div>
-                            <div class="row"><p style="text-align: center;">Sweater $40.00</p></div>
+                            <div class="row-lg">
+                                <p style="object-fit: cover;font-size: 14px;font-family: Arial, Helvetica, sans-serif;">
+                                    Sweater <b>$40.00</b></p>
+                            </div>
                         </div>
-        
+
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-lg">
                             <div class="row">
-                                <img src="WhitneyPullover.png" alt="whitney" style="height: 230px;width: 230px;"
-                                class="img-fluid">
+                                <img src="WhitneyPullover.png" alt="whitney"
+                                    style="height: 230px;width: 230px;object-fit: contain;" class="img-fluid">
                             </div>
-                            <div class="row" style="text-align: center;"><p style="text-align: center;">Jacket $60.00</p></div>
+                            <div class="row">
+                                <p style="object-fit: cover;font-size: 14px;font-family: Arial, Helvetica, sans-serif;"
+                                    class="center">
+                                    Jacket <b>$60.00</b></p>
+                            </div>
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </main>
-    <footer style="background-color: #F6F6F6;">
+    <footer style="width: 100%;right: 0">
         <div class="container-fluid center">
             <br>
-            <p style="font-size: 24px;text-align: center;">We love speaking to our customers, got a question?</p>
-            <div class="row" style="text-align: center;">
-                <div class="col-lg-4">
-                    <div class="row" style="text-align: right;">
-                        <p>@shopifypartners</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="row">
-                        <p>1-800-555-1234</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="row" style="text-align: left;">
-                        <p>hello@myshopemail.com</p>
-                    </div>
-                </div>
+            <p style="font-size: 24px;text-align: center;font-family: Arial, Helvetica, sans-serif;">We love speaking to
+                our customers, got a question?</p>
+            <div class="container-fluid">
+                <p style="text-align: center;">
+                    <a href="#" class="partners" style="font-weight:bold">@shopifypartners</a>
+                    <a href="#" class="partners" style="font-weight:bold">1-800-555-1234</a>
+                    <a href="#" class="partners" style="font-weight:bold">hello@myshopemail.com</a>
+                </p>
             </div>
+
         </div>
         <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg">
                 <hr style="height:2px;border-width:0;color:#CCCCCC;"><br>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="row" style="font-size: 18px;">Menu</div><br>
-                    <div class="row">Women</div>
-                    <div class="row">Men</div>
-                    <div class="row">Accessories</div>
-                    <div class="row">About</div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row" style="font-size: 18px; color: #444444;">About us</div><br>
+                <div class="container-fluid">
                     <div class="row">
-                        The Shopify Web Design and Development Blog provides design inspiration, development and tips,
-                        and business insights for anyone working as a freelancer or agency in the web design space. Our
-                        blog gives you the resources and tools you need to push creative boundaries and challenge the
-                        status quo when approaching each and every web design project.<br>
-                        Subscribe to our email newsletter for regular updates featuring new articles, free resources,
-                        and innovative examples of websites that are doing something right.
+                        <div class="col-lg-3" style="margin: 0 ">
+                            <div class="row" style="font-size: 18px;font-weight: bold;color: #444444;">Menu</div><br>
+                            <div class="row"><a href="#" class="menu">Women</a></div>
+                            <div class="row"><a href="#" class="menu">Men</a></div>
+                            <div class="row"><a href="#" class="menu">Accessories</a></div>
+                            <div class="row"><a href="#" class="menu">About</a></div>
+                        </div>
+                        <div class="col-lg-6" style="margin: 0 ">
+                            <div class="row" style="font-size: 18px; color: #444444;font-weight: bold;">About us</div>
+                            <br>
+                            <div class="row">
+                                The Shopify Web Design and Development Blog provides design inspiration, development and
+                                tips, and business insights for anyone working as a freelancer or agency in the web
+                                design space. Our blog gives you the resources and tools you need to push creative
+                                boundaries and challenge the status quo when approaching each and every web design
+                                project.
+                                <br> Subscribe to our email newsletter for regular updates featuring new articles, free
+                                resources, and innovative examples of websites that are doing something right.
+                            </div>
+                        </div>
+                        <div class="col-lg" style="margin: 0 ">
+                            <div class="row">
+                                <div class="col-2">
+                                    <a href="#"><img src="Facebook.png" alt="fb"></a>
+                                </div>
+                                <div class="col-2">
+                                    <a href="#"><img src="Twitter.png" alt="fb"></a>
+                                </div>
+                                <div class="col-2">
+                                    <a href="#"><img src="Instagram.png" alt="fb"></a>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg">
-                    <div class="row">
-                        <div class="col-2"><img src="Facebook.png" alt="fb"></div>
-                        <div class="col-2"><img src="Twitter.png" alt="twit"></div>
-                        <div class="col-2"><img src="Instagram.png" alt="insta"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <hr style="height:2px;border-width:0;color:#CCCCCC;"><br>
+                <br>
+                <hr style="height:2px;border-width:0;color:#CCCCCC;"><br>
             </div>
             <div class="col-2"></div>
             <div class="container-fluid">
@@ -141,8 +169,8 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
     </footer>
 </body>
 
