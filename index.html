@@ -18,50 +18,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <style>
-        header {
-            background-image: url("Hero.png");
-            background-attachment: scroll;
-            background-size:cover;
-            background-repeat: no-repeat;
-            width:100%;
-            height:fit-content;
-            object-fit:cover;
-            /* position: relative; */
-            display: flex;
-            flex-flow: column;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: space-evenly;
-            padding-top: 5PX;
-        }
-
-        .sp {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .feature {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
 </head>
 
 <body>
-    <header>
+    <header class="img-fluid">
         <div class="container-fluid nav">
             <div><a href="#"><img src="Hamburger Menu.png" alt="hamburger"></a></div>
             <div>
-                <p class="city"><img src="City White Copy 7.png" alt="city"></p>
+                <p><img src="City White Copy 7.png" alt="city" class="img-fluid"></p>
             </div>
             <div><a href="#"><img src="Shape.png" alt="cart"></a></div>
         </div>
-        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;justify-content: space-around;">
+        <br><br><br><br><br><br><br><br>
+        <div
+            style="display: flex;flex-direction: column;justify-content: center;align-items: center;justify-content: space-around;">
             <div class="row" style="text-align: center;">
                 <p style="font-style: italic;
                 color: white;
@@ -72,43 +42,77 @@
                 <p style="font-size:3vw;font-family:Arial, Helvetica, sans-serif;color: white;text-align: center;">
                     Collection is here!</p>
             </div>
-            <div class="row"></div>
+            <div class="row">
+                <form style="border-width: 2px;border-color: white;background-color: black;margin: 10px;">
+                    <input placeholder="Shop the collection" class="searchbar" />
+                    <button><img src="right arrow.png" alt=""></button>
+                </form>
+            </div>
         </div>
     </header>
+
+
     <main>
-        <div class="container-fluid d-none d-lg-block" style="display:flex;justify-content:center">
+
+        <div class="container-fluid d-none d-md-block"
+            style="display:flex;justify-content:center;justify-content: space-around;">
+
+
             <div class="row">
-                <div class="col-lg-6" style="display: flex;justify-content:end;margin-bottom: 10px;">
-                    <img src="sunglass.jpg" alt="sun" class="img-fluid" style="position: relative;">
-                    <div style="position: absolute;display: flex;justify-content: center;align-items: center;" class="sunglasses">
+
+                <div class="col-lg-6 col-md-6" style="display: flex;justify-content:end;margin-bottom: 10px;">
+                    <img src="sunglass.jpg" alt="sun" class="img-fluid">
+                    <div style="position: absolute;top:150px;left:200px;" class="sunglasses">
                         <P class="sunglasses">SUNGLASSES</P>
                     </div>
+                    <form class="form1" style="position: absolute;top:200px;left:200px;">
+                        <input placeholder="Shop now" class="search1" />
+                        <button style="background: transparent;"><img src="right arrow.png" alt="click"></button>
+                    </form>
                 </div>
-                <div class="col-lg-6" style="display: flex;justify-content:start;margin-bottom: 10px;">
+
+
+                <div class="col-lg-6 col-md-6" style="display: flex;justify-content:start;margin-bottom: 10px;">
                     <img src="leather jacket BW.png" alt="leather" class="img-fluid">
                     <div style="position: absolute;top:150px;left:200px" class="sunglasses">
                         <P class="sunglasses">JACKET</P>
                     </div>
+                    <form class="form1" style="position: absolute;top:200px;left:150px;">
+                        <input placeholder="Shop now" class="search1" />
+                        <button style="background: transparent;"><img src="right arrow.png" alt="click"></button>
+                    </form>
                 </div>
+
+
             </div>
         </div>
-        <div class="container-fluid d-lg-none" style="display:flex;justify-content:center">
+
+        <div class="container-fluid d-md-none" style="display:flex;justify-content:center">
 
             <div class="row">
                 <div class="col">
-                    <div class="row" style="margin: 0 10px;position: relative;">
-                        <img src="sunglass.jpg" alt="sun" class="img-fluid">
-                        <div style="position: absolute;top:150px;left:100px;" class="sunglasses">
-                            <P class="sunglasses">SUNGLASSES</P>
+                    <div class="row" style="margin: 0 10px;">
+                        <div class="col" style="position: relative;">
+                            <img src="sunglass.jpg" alt="sun" class="img-fluid">
+                        <P class="sunglasses" style="position: absolute;top:150px;left:100px;">SUNGLASSES</P>
+                        <form class="form1" style="position: absolute;top:200px;left:100px;display: flex;align-content: center;">
+                            <input placeholder="Shop now" class="search1" />
+                            <button style="background: transparent;"><img src="right arrow.png" alt="click"></button>
+                        </form>
                         </div>
-
                     </div>
                     <br>
-                    <div class="row" style="margin: 0 10px;position: relative;">
-                        <img src="leather jacket BW.png" alt="leather" class="img-fluid">
+                    <div class="row" style="margin: 0 10px;">
+                        <div class="col">
+                            <img src="leather jacket BW.png" alt="leather" class="img-fluid">
                         <p style="position: absolute;top:150px;left:150px;" class="sunglasses">
                             JACKETS
                         </p>
+                        <form class="form1" style="position: absolute;top:200px;left:100px;">
+                            <input placeholder="Shop now" class="search1" />
+                            <button style="background: transparent;"><img src="right arrow.png" alt="click"></button>
+                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
