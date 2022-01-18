@@ -36,9 +36,89 @@ footer {
     font-size: 222px;
     text-align: center;
 }
-.city{
-    font-style: italic;
-    font-weight: bolder;
+
+.demo{
+    background-image: url("Hero.png");
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-image: url("Hero.png");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 978px;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5PX;
+}
+
+.sp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+
+    border: 1px solid grey;
+
+    padding: 2px;
+}
+
+input {
+    flex-grow: 2;
+    background-color: black;
+    border: none;
+}
+
+button {
+    background: black;
+    border: none;
     color: white;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.searchbar {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.search1 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    background: transparent;
+}
+
+.form1 {
+    border-width: 2px;
+    border-color: white;
+    background-color: transparent;
+    margin: 10px;
+    position: absolute;
 }
