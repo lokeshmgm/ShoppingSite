@@ -22,12 +22,14 @@
         header {
             background-image: url("Hero.png");
             background-attachment: scroll;
-            background-size: auto;
+            background-size:cover;
             background-repeat: no-repeat;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            position: relative;
+            width:100%;
+            height:fit-content;
+            object-fit:cover;
+            /* position: relative; */
+            display: flex;
+            flex-flow: column;
         }
 
         .nav {
@@ -59,26 +61,26 @@
             </div>
             <div><a href="#"><img src="Shape.png" alt="cart"></a></div>
         </div>
-        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;justify-content: space-around;">
             <div class="row" style="text-align: center;">
                 <p style="font-style: italic;
                 color: white;
                 font-weight: lighter;
-                font-size: 15vw;
-                ">SPRING</p>
+                font-size: 15vw;">SPRING</p>
             </div>
             <div class="row">
                 <p style="font-size:3vw;font-family:Arial, Helvetica, sans-serif;color: white;text-align: center;">
                     Collection is here!</p>
             </div>
-            </div>
+            <div class="row"></div>
+        </div>
     </header>
     <main>
         <div class="container-fluid d-none d-lg-block" style="display:flex;justify-content:center">
             <div class="row">
                 <div class="col-lg-6" style="display: flex;justify-content:end;margin-bottom: 10px;">
-                    <img src="sunglass.jpg" alt="sun" class="img-fluid">
-                    <div style="position: absolute;top:150px;left:220px" class="sunglasses">
+                    <img src="sunglass.jpg" alt="sun" class="img-fluid" style="position: relative;">
+                    <div style="position: absolute;display: flex;justify-content: center;align-items: center;" class="sunglasses">
                         <P class="sunglasses">SUNGLASSES</P>
                     </div>
                 </div>
